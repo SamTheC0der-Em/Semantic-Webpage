@@ -4,68 +4,99 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A Semantic Webpage</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1>Semantic HTML</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="main-heading">
+      <a id="logo" href="#">Semantic Html</a>
+      <div class="navigation">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-      <h2>Article Title: The Importance of Semantic HTML</h2>
-      <p>Published on: March 3, 2026</p>
-      <article>
-        <h3>Introduction</h3>
-        <p>
-          This is a basic, unstyled webpage designed to demonstrate the core
-          structure of a document using only semantic HTMl 5 tags. By removing
-          all CSS, we can see how browsers interpret the hierarchy and meaning
-          of elements by default.
-        </p>
-        <h3>The Benefits of Meaningful Markup</h3>
-        <p>Semantic HTML provides several advantages:</p>
-        <ul>
-          <li>
-            <strong>Accessibility:</strong> Screen readers use these tags to
-            help users navigate the content.
-          </li>
-          <br />
-          <li>
-            <strong>SEO:</strong> Search engines can better understand the
-            context and importance of your information.
-          </li>
-          <br />
-          <li>
-            <strong>Maintainability:</strong> It is easier for developers to
-            read and understand the code's purpose.
-          </li>
-        </ul>
-        <p>
-          Using elements like header, nav, main, article, aside, and footer
-          defines the layout clearly without needing a single line of CSS.
-          <br />
-          <br />Category: Web Development
-        </p>
-      </article>
-      <aside>
-        <h3>Related Links</h3>
-        <ul>
-          <li><a href="#" target="_blank">HTML5 Specification</a></li>
-          <li><a href="#" target="_blank">W3C Accessibility Guidelines</a></li>
-          <li><a href="#" target="_blank">MDN Web Docs</a></li>
-        </ul>
-        <h3>About the Author</h3>
-        <p>A web enthusiast exploring the foundations of the open web.</p>
-      </aside>
-    </main>
+    <div class="container">
+      <main class="hero-section">
+        <h1>Article Title: The Importance of Semantic HTML</h1>
+        <div class="author-container">
+          <img
+            src="images/Snapchat-437334202.jpg"
+            alt="Author"
+            width="75"
+            height="75"
+            id="author-img"
+          />
+          <p>Published by <strong>Samuel Alarape</strong> on March 3, 2026</p>
+        </div>
+        <div class="hero-flex">
+          <section class="content">
+            <h2>Introduction</h2>
+            <p>
+              This is a basic, unstyled webpage designed to demonstrate the core
+              structure of a document using only semantic HTML 5 tags. By
+              removing all CSS, we can see how browsers interpret the hierarchy
+              and meaning of elements by default.
+            </p>
+            <h2>The Benefits of Meaningful Markup</h2>
+            <p>Semantic HTML provides several advantages:</p>
+            <ul>
+              <li>
+                <strong>Accessibility:</strong> Screen readers use these tags to
+                help users navigate the content.
+              </li>
+              <li>
+                <strong>SEO:</strong> Search engines can better understand the
+                context and importance of your information.
+              </li>
+              <li>
+                <strong>Maintainability:</strong> It is easier for developers to
+                read and understand the code's purpose.
+              </li>
+            </ul>
+            <p>
+              Using elements like header, nav, main, article, aside, section,
+              and footer defines the layout clearly without needing a single
+              line of CSS.
+            </p>
+          </section>
+          <div class="aside-bar-container">
+            <aside class="aside-bar">
+              <h3>Related Links</h3>
+              <ul>
+                <li><a href="#" target="_blank">HTML5 Specification</a></li>
+                <li>
+                  <a href="#" target="_blank">W3C Accessibility Guidelines</a>
+                </li>
+                <li><a href="#" target="_blank">MDN Web Docs</a></li>
+              </ul>
+              <h3>About the Author</h3>
+              <p>A web enthusiast exploring the foundations of the open web.</p>
+            </aside>
+          </div>
+        </div>
+        <span id="category-badge">Category: Web Development</span>
+      </main>
+    </div>
     <footer>
-      &copy; EmCred Tech, 2026 Basic Semantic HTML Layout. All rights reserved.
+      <small
+        >&copy; EmCred Tech, 2026 Basic Semantic HTML Layout. All rights
+        reserved.</small
+      >
     </footer>
   </body>
 </html>
