@@ -3,86 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
     <title>A Semantic Webpage</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <header class="main-heading">
-      <a id="logo" href="#">Semantic Html</a>
+    <header
+      class="flex justify-between items-center bg-gray-200 px-10 py-5 w-full fixed top-0 z-50"
+    >
+      <a
+        id="logo"
+        href="#"
+        class=" font-extrabold text-3xl uppercase  md:font-extrabold text-sky-400 md:text-xl "
+        >Semantic Html</a
+      >
+      <div>
+        <nav>
+          <ul class="hidden md:flex gap-5 text-lg font-medium">
+            <li class="hover:text-orange-500 hover:border-b-2">
+              <a href="#">Home</a>
+            </li>
+            <li class="hover:text-orange-500 hover:border-b-2">
+              <a href="#">About</a>
+            </li>
+            <li class="hover:text-orange-500 hover:border-b-2">
+              <a href="#">Services</a>
+            </li>
+            <li class="hover:text-orange-500 hover:border-b-2">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <div class="container">
-      <main class="hero-section">
-        <h1>Article Title: The Importance of Semantic HTML</h1>
-        <div class="author-container">
-          <img
-            src="images/Snapchat-437334202.jpg"
-            alt="Author"
-            width="75"
-            height="75"
-            id="author-img"
-          />
-          <p>Published by <strong>Samuel Alarape</strong> on March 3, 2026</p>
-        </div>
-        <div class="hero-flex">
-          <section class="content">
-            <h2>Introduction</h2>
-            <p>
-              This is a basic, unstyled webpage designed to demonstrate the core
-              structure of a document using only semantic HTML 5 tags. By
-              removing all CSS, we can see how browsers interpret the hierarchy
-              and meaning of elements by default.
-            </p>
-            <h2>The Benefits of Meaningful Markup</h2>
-            <p>Semantic HTML provides several advantages:</p>
-            <ul>
-              <li>
-                <strong>Accessibility:</strong> Screen readers use these tags to
-                help users navigate the content.
+    <main class="mt-30 px-5">
+      <h1 class="text-3xl mb-8 md:text-5xl font-bold text-center mb-15">
+        Article Title: The Importance of Semantic HTML
+      </h1>
+      <div class="flex items-center gap-8">
+        <img
+          src="images/Snapchat-437334202.jpg"
+          alt="Author"
+          width="75"
+          height="75"
+          id="author-img"
+          class="rounded-full object-cover"
+        />
+        <p class="text-lg">
+          Published by
+          <strong class="text-orange-500">Samuel Alarape</strong> on March 3,
+          2026
+        </p>
+      </div>
+      <div>
+        <section class="mt-5">
+          <h2 class="text-2xl font-bold uppercase mb-3">Introduction</h2>
+          <p class="text-lg leading-relaxed">
+            This is a basic, unstyled webpage designed to demonstrate the core
+            structure of a document using only semantic HTML 5 tags. By removing
+            all CSS, we can see how browsers interpret the hierarchy and meaning
+            of elements by default.
+          </p>
+          <h2 class="text-2xl font-bold uppercase my-3">
+            The Benefits of Meaningful Markup
+          </h2>
+          <p class="text-lg leading-relaxed">
+            Semantic HTML provides several advantages:
+          </p>
+          <ul class="mt-3 text-lg leading-relaxed tra">
+            <li>
+              <strong>Accessibility:</strong> Screen readers use these tags to
+              help users navigate the content.
+            </li>
+            <li class="my-3">
+              <strong>SEO:</strong> Search engines can better understand the
+              context and importance of your information.
+            </li>
+            <li>
+              <strong>Maintainability:</strong> It is easier for developers to
+              read and understand the code's purpose.
+            </li>
+          </ul>
+          <p class="text-lg leading-relaxed">
+            Using elements like header, nav, main, article, aside, section, and
+            footer defines the layout clearly without needing a single line of
+            CSS.
+          </p>
+        </section>
+        <aside class="text-center my-8">
+          <div class="bg-gray-100 max-w-xl rounded-lg shadow-md mx-auto py-5" >
+            <h3 class="text-xl font-medium pb-3">Related Links</h3>
+            <ul class="py-5">
+              <li><a href="#" target="_blank">HTML5 Specification</a></li>
+              <li class="my-3">
+                <a href="#" target="_blank">W3C Accessibility Guidelines</a>
               </li>
-              <li>
-                <strong>SEO:</strong> Search engines can better understand the
-                context and importance of your information.
-              </li>
-              <li>
-                <strong>Maintainability:</strong> It is easier for developers to
-                read and understand the code's purpose.
-              </li>
+              <li><a href="#" target="_blank">MDN Web Docs</a></li>
             </ul>
-            <p>
-              Using elements like header, nav, main, article, aside, section,
-              and footer defines the layout clearly without needing a single
-              line of CSS.
-            </p>
-          </section>
-          <div class="aside-bar-container">
-            <aside class="aside-bar">
-              <h3>Related Links</h3>
-              <ul>
-                <li><a href="#" target="_blank">HTML5 Specification</a></li>
-                <li>
-                  <a href="#" target="_blank">W3C Accessibility Guidelines</a>
-                </li>
-                <li><a href="#" target="_blank">MDN Web Docs</a></li>
-              </ul>
-              <h3>About the Author</h3>
-              <p>A web enthusiast exploring the foundations of the open web.</p>
-            </aside>
+            <h3 class="font-medium text-xl">About the Author</h3>
+            <p>A web enthusiast exploring the foundations of the open web.</p>
           </div>
-        </div>
-        <span id="category-badge">Category: Web Development</span>
-      </main>
-    </div>
-    <footer>
+        </aside>
+      </div>
+      <span class="my-10 p-2 text-sm bg-orange-500 md:bg-orange-500 text-white md:p-2 rounded-2xl md:text-lg">Category: Web Development</span>
+    </main>
+
+    <footer class="text-center bg-black text-white py-10 mt-8 w-full rounded-t-3xl">
       <small
         >&copy; EmCred Tech, 2026 Basic Semantic HTML Layout. All rights
         reserved.</small
